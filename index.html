@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+    <!--DIV para colocar titulo y descripción-->
+    <div>
+      <h1 id="title" class="textCenter">freeCodeCamp Survey Form</h1>
+      <p id="description" class="textCenter">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    </header>
+    <!--DIV para todo el form completo-->
+    <main>
+      <section>
+        <div class="center">
+            <form>
+              <div class="inputbox">
+                <input type="text" required="required">
+                <span>Email</span>
+              </div>
+              <div class="inputbox">
+                <input type="password" required="required">
+                <span>Password</span>
+              </div>
+              <div class="inputbox">
+                <input type="number" required="required">
+                <span>Age (Optional)</span>
+              </div>
+              <div class="inputbox">
+                <label class="label-select">Which option best describes your current role?</label>
+                <select>
+                  <option>Select current role</option>
+                  <option>Student</option>
+                  <option>Full Time Job</option>
+                </select>
+              </div>
+              <div class="radios">
+                <label>
+                  Would you recommend freeCodeCamp to a friend?
+                  <div class="select-options">
+                  <label><input type="radio" name="option" value="1" class="input-radio">Definitely<label><br>
+                  <label><input type="radio" name="option" value="2" class="input-radio">Not sure<label><br>
+                  </div>
+                </label>
+              </div>
+              <div class="inputbox">
+                <label  class="label-select">What is your favorite feature of freeCodeCamp?</label>
+                <select>
+                  <option>Select an option</option>
+                  <option>Challenges</option>
+                  <option>Projects</option>
+                  <option>Community</option>
+                  <option>Open Source</option>
+                </select>
+              </div>
+              <div class="radios">
+                <label>
+                  What would you like to see improved? <label class="clue">(Check all that apply)</label>
+                <div class="checkboxes">
+                  <label>
+                  <input type="checkbox" value="1" class="input-checkbox">
+                  Front-end Projects
+                  </label><br> 
+                  <label>
+                    <input type="checkbox" value="1" class="input-checkbox">
+                    Back-end Projects
+                  </label><br>
+                  <label>
+                    <input type="checkbox" value="1" class="input-checkbox">
+                    Data Visualization
+                    </label><br>
+                    <label>
+                      <input type="checkbox" value="1" class="input-checkbox">
+                      Challenges
+                      </label><br>
+                      <label>
+                        <input type="checkbox" value="1" class="input-checkbox">
+                        Open Source Community
+                        </label><br>
+                </div>
+                </label>
+              </div>
+              <div class="textarea">
+                <label>
+                  Any comments or suggestions?
+                 <textarea placeholder="Enter your comment here..."></textarea>
+                </label>
+              </div>
+              <div class="">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+              </div>
+            </form>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
